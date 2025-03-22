@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lamborghini Auto Centre</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <p>In our esteemed car garage, we have the following cars:</p>
+    <ol type="I">
+      <li>Lamborghini Huracán</li>
+      <li>Lamborghini Huracán Performante</li>
+      <li>Lamborghini Countach</li>
+      <li>Lamborghini Aventador</li>
+      <li>Lamborghini Revuelto</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>Lamborghini Huracán</h2>
+    <img
+      src="https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=600"
+      alt="Huracán image"
+      width="500"
+    />
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Lewis Gitonga</td>
+        <td>Kangemi Waiyaki Way</td>
+        <td>+254711527211</td>
+        <td>adelewigitz@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Tosh Lewi</td>
+        <td>Kahawa Sukari Thika Road</td>
+        <td>+254746918826</td>
+        <td>toshlewi@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Meredith Mwaniki</td>
+        <td>Lakeside Nyanza</td>
+        <td>+254789347876</td>
+        <td>meredithmwaniki@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Emily Kwamboka</td>
+        <td>Kakamega</td>
+        <td>+254712345678</td>
+        <td>emily@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Chris Baraka</td>
+        <td>Mtwapa, Mombasa</td>
+        <td>+254787654321</td>
+        <td>chris@gmail.com</td>
+      </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <p>Register to access our esteemed client privileges</p>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter a strong password"
+        required
+        minlength="8"
+        maxlength="20"
+      /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <label for="gender">Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" required />
+      <label for="other">Other</label><br /><br />
+
+      <label for="country">Select Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Choose a country</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="japan">Japan</option></select
+      ><br /><br />
+
+      <label>Interests:</label><br />
+      <input type="checkbox" id="sports" name="interests" value="sports" />
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="interests" value="music" />
+      <label for="music">Music</label>
+      <input type="checkbox" id="reading" name="interests" value="reading" />
+      <label for="reading">Reading</label><br /><br />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
+
